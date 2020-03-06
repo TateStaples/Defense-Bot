@@ -7,9 +7,7 @@ import frc.team6502.robot.subsystems.Drivetrain
  * Initialize devices and subsystems here
  */
 object RobotContainer {
-    private val controller = Joystick(Constants.XBOX_PORT).apply {
-
-    }
+    private val controller = Joystick(Constants.JOYSTICK_PORT)
 
     val forward
         get() = controller.x
