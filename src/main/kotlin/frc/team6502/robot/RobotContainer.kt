@@ -10,10 +10,10 @@ object RobotContainer {
     private val controller = Joystick(Constants.JOYSTICK_PORT)
 
     val forward
-        get() = controller.x
+        get() = -controller.y
 
     val turn
-        get() = controller.y
+        get() = controller.x
 
     init {
         // initialize subsystems here:
